@@ -47,27 +47,27 @@ npm install react-native-chatgpt
 
 ### Expo
 
-You also need to install `react-native-webview` and `expo-secure-store`
+You also need to install `react-native-webview` and `@react-native-async-storage/async-storage`
 
 ```sh
-npx expo install react-native-webview expo-secure-store
+npx expo install react-native-webview @react-native-async-storage/async-storage
 ```
 
 No additional steps are needed.
 
 ### Bare React Native apps
 
-You also need to install `react-native-webview`, `react-native-vector-icons` and `expo-secure-store`
+You also need to install `react-native-webview`, `react-native-vector-icons` and `@react-native-async-storage/async-storage`
 
 ```sh
-npm install react-native-webview react-native-vector-icons expo-secure-store
+npm install react-native-webview react-native-vector-icons @react-native-async-storage/async-storage
 ```
 
 After the installation completes, you should also follow some additional instructions to set up the libraries:
 
 - [react-native-webview](https://github.com/react-native-webview/react-native-webview/blob/master/docs/Getting-Started.md)
 - [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons#installation)
-- [expo-secure-store](https://github.com/expo/expo/tree/sdk-47/packages/expo-secure-store#installation-in-bare-react-native-projects)
+- [@react-native-async-storage/async-storage](https://github.com/expo/expo/tree/sdk-47/packages/@react-native-async-storage/async-storage#installation-in-bare-react-native-projects)
 
 ## API
 

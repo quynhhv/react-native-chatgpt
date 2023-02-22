@@ -1,4 +1,4 @@
-import * as SecureStore from 'expo-secure-store';
+import AsyncStorage from '@react-native-community/async-storage';
 import { useEffect, useState } from 'react';
 
 const TOKEN_ACCESS_KEY = 'react_native_chatgpt_access_token';
@@ -9,11 +9,11 @@ interface State {
 }
 
 async function persistToken(value: string) {
-  return SecureStore.setItemAsync(TOKEN_ACCESS_KEY, value);
+  return AsyncStorage.setItem(TOKEN_ACCESS_KEY, value);
 }
 
 async function getTokenFromDisk() {
-  return SecureStore.getItemAsync(TOKEN_ACCESS_KEY);
+  return AsyncStorage.getItem(TOKEN_ACCESS_KEY);
 }
 
 export default function usePersistAccessToken() {
